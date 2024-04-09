@@ -543,6 +543,30 @@ footer ul li a:hover{
 
 /* ================phone media query============ */
 @media screen and (max-width: 600px){
+
+    .container{
+        width: var(--container-width-md);
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+
+    h2{
+        font-size: 1.4rem;
+    }
+
+    h3{
+        font-size: 1.1rem;
+    }
+
+    h4{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 0.7rem;
+    }
     .container{
         width: var(--container-width-sm);
 
@@ -554,7 +578,12 @@ footer ul li a:hover{
         
     }
 
-    
+    .btn{
+        
+        padding: 0.8rem 1.4rem;
+        
+        
+    }
 
     /* header */
     header{
@@ -590,7 +619,12 @@ footer ul li a:hover{
 
     /* events */
     .events-container{
-       grid-template-columns: 1fr; 
+       grid-template-columns: 1fr 1fr; 
+       gap:0.5rem
+    }
+
+    .events-container p{
+        font-size: 0.8rem;
     }
 
     /* footer */

@@ -525,7 +525,7 @@ footer ul li a:hover{
     }
 
     h3{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     h4{
@@ -533,7 +533,7 @@ footer ul li a:hover{
     }
 
     p{
-       font-size:  0.9rem;
+       font-size:  0.8rem;
     }
 
 
@@ -548,14 +548,18 @@ footer ul li a:hover{
     }
 
     .mentor-container{
-        grid-template-columns: 1fr;
-        gap:1rem;
+        grid-template-columns: 1fr 1fr;
+        gap:0.5rem;
     }
 
     .about_leanin-left{
         width: 60%;
         margin: 0 auto;
 
+    }
+    .mentor{
+        padding:0.3rem;
+        padding:
     }
 
     

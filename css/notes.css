@@ -184,7 +184,7 @@ nav button{
 /* roadmap css */
 
 .roadmap {
-    margin-top: 5rem;
+    margin-top: 8rem;
     padding: 2rem;
     display: block;
     margin-right: 5rem;
@@ -698,7 +698,7 @@ footer ul li a:hover{
 
     .notes_container{
        grid-template-columns:repeat(2,1fr ); 
-       gap: 1.5rem;
+       gap: 1rem;
     }
 
     .algos{
@@ -707,7 +707,7 @@ footer ul li a:hover{
 
     .algos_container{
        grid-template-columns:repeat(2,1fr ); 
-       gap: 1rem;
+       gap: 0.8rem;
     }
 
     .algo button{
