@@ -620,7 +620,7 @@ footer ul li a:hover{
     /* events */
     .events-container{
        grid-template-columns: 1fr 1fr; 
-       gap:0.5rem
+       gap:0.5rem;
     }
 
     .events-container p{
