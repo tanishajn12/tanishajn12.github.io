@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMinds</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" class="stylesheet">
+
+    <!-- swiper cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html"><h4>CodeMinds</h4></a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="notes.html">Notes</a></li>
+                <li><a href="practice.html">Practice</a></li>
+                <li><a href="doubts.html">Doubt</a></li>
+
+            </ul>
+
+            <button id="open-menu-btn"><i class="fas fa-bars"></i></button>
+            <button id="close-menu-btn"><i class="fas fa-times"></i></button>
+        </div>
+    </nav>
+
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <header>
+        <div class="container header_container">
+            <div class="header_left">
+                <h1>DSA Excellence : Lets Code It</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam velit quod obcaecati natus ducimus dolorem numquam ipsam molestias nesciunt id?</p>
+                <a href="about.html" class="btn btn-primary">Join Community</a>
+            </div>
+
+            <div class="header_right">
+                <div class="header_right-image">
+                    <img src="./images/Team spirit-pana.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- end of header -->
+
+
+
+    <!-- cohort -->
+    <section class="cohorts">
+        <div class="container cohorts_container">
+            <div class="cohort_left">
+                <h1>Important Data Structures & Algorithms</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic nisi, aliquid explicabo dolores libero tempora.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+
+            <div class="cohort_right">
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-code"></i></span>
+                    <h5>Arrays</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, consequatur.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-laptop"></i></span>
+                    <h5>Linked List</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, consequatur.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-mobile-screen"></i></span>
+                    <h5>Trees</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, consequatur.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-laptop-file"></i></span>
+                    <h5>Dynamic Programming</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, consequatur.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-pen-nib"></i></span>
+                    <h5>Recursion & Backtracking</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, consequatur.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="fa-solid fa-chalkboard-user"></i></span>
+                    <h5>Graphs</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, consequatur.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Popular Events -->
+    <section class="events">
+        <h2>DSA Contest Solutions</h2>
+        <div class="container events-container">
+            <article class="event">
+                <div class="event_image">
+                    <img src="./images/biweekly_contest.png" alt="">
+                </div>
+
+                <div class="event_info">
+                    <h4>LeetCode Biweekly Contest 127</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, tempore.</p>
+    
+                </div>
+            </article>
+
+            <article class="event">
+                <div class="event_image">
+                    <img src="./images/weekly_contest.png" alt="">
+                </div>
+                <div class="event_info">
+                    <h4>LeetCode Weekly Contest 391</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, tempore.</p>
+                </div>
+            </article>
+
+            <a href="https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/description/?envType=daily-question&envId=2024-04-08" target="blank"><article class="event">
+                <div class="event_image">
+                    <img src="./images/gfg.jpeg" alt="">
+                </div>
+                <div class="event_info">
+                    <h4>GFG Problem Of The Day</h4>
+                    <p>23.04.24</p>
+    
+                </div>
+                <!-- <button class="btn problem-btn">View Problem</button> -->
+                <button class="btn solution-btn" onclick="openPdfViewer('./files/Report.pdf')">View Solution</button>
+
+            </article></a>
+
+            <a href="https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/description/?envType=daily-question&envId=2024-04-08" target="blank"><article class="event">
+                <div class="event_image">
+                    <img src="./images/leetcode.png" alt="">
+                </div>
+                <div class="event_info">
+                    <h4>Leetcode Problem Of The Day</h4>   
+                    <p>08.04.24</p> 
+                </div>
+                <!-- <button class="btn problem-btn">View Problem</button> -->
+                <button class="btn solution-btn">View Solution</button>
+            </article></a>
+
+        </div>
+    </section>
+    <!-- end of events -->
+
+    <!-- testimonials -->
+    <!-- <div class="testimonials-container-wrapper">
+        <section class="testimonials mySwiper">
+            <h2>Students' Testimonials</h2>
+            <div class="container testimonials-container swiper-wrapper">
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/avatar1.png" alt="">
+
+                    </div>
+                    <div class="testimonial_info">
+                        <h5>Sakshi Mehta</h5>
+                        <small>Student BTech MAE</small>
+
+                    </div>
+
+                    <div class="testimonial_body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut molestiae nesciunt accusamus. Aliquam, placeat.</p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/avatar2.png" alt="">
+
+                    </div>
+                    <div class="testimonial_info">
+                        <h5>Tisha Jain</h5>
+                        <small>Student BTech IT</small>
+
+                    </div>
+
+                    <div class="testimonial_body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut molestiae nesciunt accusamus. Aliquam, placeat.</p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/avatar3.png" alt="">
+
+                    </div>
+                    <div class="testimonial_info">
+                        <h5>Ruhanika Bansal</h5>
+                        <small>Student BTech IT</small>
+
+                    </div>
+
+                    <div class="testimonial_body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut molestiae nesciunt accusamus. Aliquam, placeat.</p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/avatar4.png" alt="">
+
+                    </div>
+                    <div class="testimonial_info">
+                        <h5>Aanya Singh</h5>
+                        <small>Student BTech CSE</small>
+
+                    </div>
+
+                    <div class="testimonial_body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut molestiae nesciunt accusamus. Aliquam, placeat.</p>
+                    </div>
+                </article>
+
+                <article class="testimonial swiper-slide">
+                    <div class="avatar">
+                        <img src="./images/avatar5.png" alt="">
+
+                    </div>
+                    <div class="testimonial_info">
+                        <h5>Anshika Sharma</h5>
+                        <small>Student BTech CSE</small>
+
+                    </div>
+
+                    <div class="testimonial_body">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut molestiae nesciunt accusamus. Aliquam, placeat.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+    </div> -->
+
+    <!-- ============================Footer Section================= -->
+
+    <footer class="footer">
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo"><h4>CodeMinds IGDTUW</h4></a>
+                <p>Address: James Church, New Church Rd, Opp. St, Kashmere Gate, New Delhi, Delhi 110006</p>
+            </div>
+
+            <div class="footer_2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                    <li><a href="practice.html">Practice</a></li>
+                    <li><a href="doubts.html">Doubts</a></li>
+    
+                </ul>
+
+            </div>
+
+            <div class="footer_3">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>codeminds2024@gmail.com</p>
+                
+                </div>
+
+                <ul class="footer_socials">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+
+                    </li>
+                </ul>
+
+                <div class="footer_copyright">
+                    <small>Copyright &copy : CodeMinds IGDTUW</small>
+                </div>
+            </div>
+
+           
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+    <!-- <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+        });
+    </script> -->
+    
+    
+</body>
+</html>
