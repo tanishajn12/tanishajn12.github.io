@@ -64,14 +64,21 @@ body {
 }
 
 section {
-    padding: 5rem 0;
+    margin-top: 5rem;
+    padding: 3rem 0;
     
 }
 
 section h2{
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
+
+section h3{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 
 h1, h2, h3,h4,h5 {
     line-height: 1.1;
@@ -179,6 +186,48 @@ nav button{
     font-size: 1rem;
     transition: all 400ms ease;
 }
+
+/* leetcode css */
+
+.problem-container{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  
+}
+
+
+
+.solution-btn {
+    background-color: var(--light-red);
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.7rem;
+    border-radius: 0.2rem;
+}
+
+.problem{
+    background-color: var(--light-blue-bg);
+    text-align:center;
+    border:1px solid transparent;
+    transition: var(--transition);
+    padding-bottom: 1rem;
+}
+
+.problems2 {
+    margin-top: 0rem;
+}
+.problem_info {
+    padding: 1rem;
+}
+
+.problem_info p{
+    margin: 0.5rem 0 0rem;
+    font-size: 0.9rem;
+    color: rgb(255, 188, 188);
+}
+
+
 
 
 /* question css */

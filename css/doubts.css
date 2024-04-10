@@ -85,20 +85,20 @@ input, textarea{
 
 
 /* media queries */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1200px){
     .contact {
         padding-bottom: 0;
     }
     .contact_container{
-        gap:1.5rem;
+        gap:1rem;
         margin-top: 3rem;
         height: auto;
-        padding: 1.5rem;
+        padding: 1rem;
     }
 
     .contact_aside{
         width: auto;
-        padding: 1.5rem;
+        padding: 1rem;
         bottom:0;
 
 
