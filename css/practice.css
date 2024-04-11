@@ -131,8 +131,8 @@ img{
     border: 1px solid transparent;
     font-weight: 500;
     transition: var(--transition);
-    width: 70%;
-    
+    width: 50%;
+     
 }
 
 .btn-primary{
@@ -190,11 +190,24 @@ nav button{
 
 /* leetcode css */
 
-.problem-container{
+/* .problem-container{
     display:grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 1rem;
   
+} */
+
+
+.problem-container{
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 1rem;
+}
+
+
+.problem-container::-webkit-scrollbar {
+    display: none;
 }
 
 
@@ -263,6 +276,21 @@ nav button{
     font-size: 0.9rem;
     color: var(--red);
     font-weight: bolder;
+}
+
+.problems{ 
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.problems .view-more-btn{
+    /* align-self: center; */
+    justify-content: center;
+    width: 30%;
+    margin-top: 2rem;
+
+
 }
 
 
