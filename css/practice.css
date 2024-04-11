@@ -98,7 +98,7 @@ h3{
 }
 
 h4{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 h5{
@@ -215,17 +215,32 @@ nav button{
     flex-direction: column;
     border:1px solid transparent;
     transition: var(--transition);
-    padding: 1rem;
-}
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+} 
+
+/* .problem{
+    background-color: var(--light-bg);
+
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    border:1px solid transparent;
+    transition: var(--transition);
+    padding-top: 1rem;
+   
+    padding-bottom: 1rem;
+} */
+
 
 
 .problem_info {
-    padding: 0.8rem;
+    padding: 1rem;
     
 }
 
 .problem_info h4{
     color:var(--dark-blue);
+    
 }
 
 .problem_image {
