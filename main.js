@@ -38,3 +38,41 @@ function closePdfViewer() {
     // Stop the PDF viewer when closing the popup
     document.getElementById('embeddedPdf').src = 'about:blank';
 }
+
+
+// // view more toggled view
+// function toggleProblemVisibility() {
+//     var problemArticles = document.querySelectorAll('.problem-container .problem');
+//     var viewMoreBtn = document.querySelector('.view-more-btn');
+
+//     // Toggle display for each problem article starting from the 6th one
+//     for (var i = 5; i < problemArticles.length; i++) {
+//         var article = problemArticles[i];
+//         article.style.display = (article.style.display === 'none') ? 'block' : 'none';
+//     }
+
+//     // Toggle button text
+//     if (viewMoreBtn.textContent === 'View More') {
+//         viewMoreBtn.textContent = 'View Less';
+//     } else {
+//         viewMoreBtn.textContent = 'View More';
+//     }
+// }
+
+function toggleProblemVisibility() {
+    var hiddenProblems = document.querySelectorAll('.problems .problem.hidden');
+    var viewMoreBtn = document.querySelector('.viewmore');
+
+    // Toggle display for all problem articles
+    hiddenProblemsProblems.forEach(function(article) {
+        article.classList.toggle('hidden');
+    });
+
+    // Toggle button text
+    if (viewMoreBtn.textContent === 'View More') {
+        viewMoreBtn.textContent = 'View Less';
+    } else {
+        viewMoreBtn.textContent = 'View More';
+    }
+}
+

@@ -190,17 +190,18 @@ nav button{
 
 /* leetcode css */
 
-/* .problem-container{
-    display:grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1rem;
-  
-} */
-
-
 .problem-container{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+  
+}
+
+
+
+/* .problem-container{
     overflow-x: auto;
-    white-space: nowrap;
+    white-space:nowrap;
     display: flex;
     gap: 1rem;
 }
@@ -208,51 +209,51 @@ nav button{
 
 .problem-container::-webkit-scrollbar {
     display: none;
-}
+} */
 
 
 .problem .solution-btn {
     background-color:green;
     color: rgb(255, 255, 255);
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     padding: 0.7rem;
     border-radius: 0.2rem;
 }
+
 
 .problem{
     background-color: var(--light-bg);
     text-align:center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-items: center; 
+    flex-direction: column; 
     border:1px solid transparent;
     transition: var(--transition);
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     padding-bottom: 1rem;
 } 
 
 /* .problem{
     background-color: var(--light-bg);
-
     display: grid;
     grid-template-rows: 1fr 3fr 1fr;
     border:1px solid transparent;
     transition: var(--transition);
     padding-top: 1rem;
-   
     padding-bottom: 1rem;
 } */
 
 
 
 .problem_info {
-    padding: 1rem;
+    padding: 0.5rem;
     
 }
 
 .problem_info h4{
     color:var(--dark-blue);
+    font-size: 1.1rem;
     
 }
 
@@ -273,26 +274,22 @@ nav button{
 
 .problem_info p{
     margin: 0.5rem 0 0rem;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--red);
-    font-weight: bolder;
+    font-weight: 600;
 }
 
-.problems{ 
-    display: flex;
-    flex-direction: column;
-    
-}
 
 .problems .view-more-btn{
     /* align-self: center; */
     justify-content: center;
-    width: 30%;
-    margin-top: 2rem;
-
-
+    width: 50%;
+    text-align: center;
 }
 
+.problem.hidden {
+    display:hidden;
+}
 
 
 
