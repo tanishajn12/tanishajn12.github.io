@@ -24,6 +24,7 @@
     --light-blue-bg: #2b2b41;
     --dark-black:#090909;
     --light-grey:#454545;
+    --grey-blue:#414564;
 
     --container-width-lg: 80%;
     --container-width-md : 90%;
@@ -313,52 +314,70 @@ nav button{
 
 
 /* testimonial css */
-.testimonials_container {
-    overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent testimonials from wrapping */
-    margin-bottom: 5rem;
-    padding: 1rem; /* Add padding to ensure space around the testimonials */
+.testimonials-container{
+    background-color: var(--grey-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.testimonial {
-    display: inline-block; /* Display testimonials in a row */
-    vertical-align: top; /* Align testimonials at the top */
-    padding-top: 2rem;
-}
 
-.avatar {
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 1rem;
-    border: 0.5rem solid var(--red);
-}
-
-.testimonial_info {
-    text-align: center;
-}
-
-.testimonial_body {
-    background: var(--light-blue-bg);
-    padding: 2rem;
-    margin-top: 3rem;
+.card-image{
     position: relative;
+    height: 10rem;
+    width: 10rem;
+    /* background-color: var(--grey-blue); */
+    padding: 2rem;
+
 }
 
-.testimonial_body::before {
-    content: "";
-    display: block;
-    background: var(--light-blue-bg);
-    width: 3rem;
-    height: 3rem;
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+}
+
+.testimonial-card{
+    width : 20rem;
+    border-radius: 5%;
+    background-color: var(--dark-blue);
+}
+
+
+
+
+.image-content, .card-content {
+    padding: 1rem;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.card-content h4 {
+    margin-bottom: 1rem;
+}
+
+.card-content p{
+    font-size: 0.9rem;
+}
+
+.image-content {
+    position: relative;
+    padding-bottom: 0;
+}
+
+.overlay {
     position: absolute;
-    left: 50%;
-    top: -1.5rem;
-    transform: rotate(45deg);
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--light-red);
+
 }
-
-
 
 
 /* ====Footer css========= */
