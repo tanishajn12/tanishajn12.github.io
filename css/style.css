@@ -168,7 +168,73 @@ nav button{
     transition: all 400ms ease;
 }
 
+/* chatbot */
+.chatbot{
+    background-color: var(--white);
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    width: 19rem;
+    border-radius: 1rem;
+    color: var(--dark-blue);
+  
+}
 
+.chatbot .chatbot-header {
+    background-color: var(--grey-blue);
+    padding: 1rem;
+    text-align:center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.chatbot h2{
+    color:white;
+    font-size: 1.1rem;
+}
+
+.chatbot .chatbox{
+    height: 18rem;
+    overflow-y: auto;
+    padding: 1rem 1rem 2rem;
+}
+
+.chatbox .chat{
+    display: flex;
+
+}
+.chatbox .incoming span{
+    height: 2rem;
+    width: 1rem;
+    color: var(--red);
+    text-align: center;
+    align-self: flex-end;
+    line-height: 1rem ;
+    margin: 0 0.3rem 0.3rem 0;
+    
+ 
+}
+.chatbox .outgoing{
+    justify-content: flex-end;
+    margin: 0.5rem 0;
+}
+.chatbox .chat p{
+    color: var(--white);
+    max-width: 75%;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 0.8rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.8rem 0.8rem 0 0.8rem;
+    background-color: var(--grey-blue);
+    margin-bottom: 0.3rem;
+
+}
+
+.chatbox .incoming p {
+    color: var(--dark-black);
+    background-color: var(--white);
+    border-radius: 0.8rem 0.8rem 0.8rem 0;
+}
 /* ==========================HEADER================= */
 header{
     position:relative;
