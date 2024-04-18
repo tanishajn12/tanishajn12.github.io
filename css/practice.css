@@ -341,7 +341,7 @@ nav button{
 }*/
 
 .contest{
-    background-color: var(--white);
+    background-color: var(--grey-blue);
     text-align:center;
     /* border:1px solid transparent; */
     transition: var(--transition);
@@ -356,7 +356,7 @@ nav button{
 }
 
 .contest_info h4{
-    color:var(--dark-blue);
+    color:var(--white);
     font-size: 1rem;
     padding: 0.2rem;
 
@@ -364,7 +364,7 @@ nav button{
 }
 
 .contest .solution-btn {
-    background-color:green;
+    background-color:#5cb85c;
     color: rgb(255, 255, 255);
     font-size: 0.75rem;
     padding: 0.7rem;

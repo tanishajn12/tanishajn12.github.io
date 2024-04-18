@@ -169,15 +169,59 @@ nav button{
 }
 
 /* chatbot */
+
+.chatbot-toggler{
+    position:fixed;
+    right:2rem;
+    bottom:1rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    color:white;
+    font-size:1.5rem;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color: var(--red);
+    border:none;
+    cursor:pointer;
+    outline:none;
+    border-radius: 50%;
+
+}
+
+.chatbot-toggler span{
+    position:absolute;
+}
+
+.show-chatbot .chatbot-toggler span:first-child,
+.chatbot-toggler span:last-child{
+    opacity: 0;
+
+}
+
+.show-chatbot .chatbot-toggler span:last-child{
+    opacity: 1;
+}
+
+
 .chatbot{
     background-color: var(--white);
     position: fixed;
-    bottom: 1rem;
+    bottom: 5rem;
     right: 2rem;
-    width: 19rem;
+    width: 20rem;
+    height:50vh;
+    opacity:0;
+    pointer-events: none;
+    overflow:hidden;
     border-radius: 1rem;
     color: var(--dark-blue);
   
+}
+
+.show-chatbot .chatbot{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .chatbot .chatbot-header {
@@ -231,10 +275,49 @@ nav button{
 }
 
 .chatbox .incoming p {
-    color: var(--dark-black);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--light-red);
     border-radius: 0.8rem 0.8rem 0.8rem 0;
+    font-weight: 400;
 }
+
+.chatbot .chat-input{
+    position: absolute;
+    bottom: 0rem;
+    width:100%;
+    display: flex;
+    gap:0.3rem;
+    background-color: #ffffff;
+    padding: 0rem 0.5rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;;
+}
+
+.chat-input textarea{
+    border:none;
+    outline:none;
+    width:100%;
+    font-size: 0.9rem;
+    resize:none;
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 1rem;
+
+}
+
+.chat-input span{
+    color: var(--grey-blue);
+    height: 2.5rem;
+    font-size: 1.20rem;
+    align-self:flex-end ;
+    cursor:pointer;
+    visibility:hidden;
+
+}
+
+.chat-input textarea:valid ~ span{
+    visibility: visible;
+}
+
 /* ==========================HEADER================= */
 header{
     position:relative;
