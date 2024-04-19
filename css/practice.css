@@ -196,15 +196,14 @@ nav button{
     gap: 0.5rem;
   
 }
-.problems{
-
+.problems, .problems-sec{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
 }
 
-.problems .btn-primary{
+.problems .btn-primary , .problems-sec .btn-primary{
     width: 10rem;
     text-align: center;
     margin-top: 2rem;
@@ -229,6 +228,9 @@ nav button{
     border-radius: 0.2rem;
 }
 
+.problems-sec{
+    margin-top: 1rem;
+}
 
 .problem{
     background-color: var(--light-bg);
@@ -267,8 +269,9 @@ nav button{
 }
 
 .problem_image {
-    width: 3rem;
-    height: 3rem;
+    margin-top: 0.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     /* border: 1px solid black; */
     justify-content:left
@@ -278,7 +281,7 @@ nav button{
 .problem_image img{
     width: 100%;
     height : 100%;
-    border-radius: 50%;
+    border-radius: 0%;
 }
 
 .problem_info p{
@@ -296,6 +299,11 @@ nav button{
     gap: 0.5rem;
   
 } */
+
+.contests{
+    margin-top: 1rem;
+    /* background-color: var(--light-blue-bg); */
+}
 
 .contests .btn-primary{
     width: 10rem;
@@ -318,7 +326,7 @@ nav button{
 .contest .solution-btn {
     background-color:green;
     color: rgb(255, 255, 255);
-    font-size: 0.75rem;
+    font-size: 0.9rem;
     padding: 0.7rem;
     border-radius: 0.2rem;
 }
@@ -341,9 +349,9 @@ nav button{
 }*/
 
 .contest{
-    background-color: var(--grey-blue);
+    background-color: var(--light-blue-bg);
     text-align:center;
-    /* border:1px solid transparent; */
+    /* border:1px solid var(--light-bg); */
     transition: var(--transition);
     padding-bottom: 2rem;
     width: 20rem;
