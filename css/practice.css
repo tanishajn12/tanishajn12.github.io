@@ -301,6 +301,8 @@ nav button{
 } */
 
 .contests{
+    display:flex;
+    flex-direction: column;
     margin-top: 1rem;
     /* background-color: var(--light-blue-bg); */
 }
@@ -312,6 +314,7 @@ nav button{
 }
 
 .contest-container{
+    display: flex;
     overflow-x: auto;
     white-space:nowrap;
     display: flex;
@@ -621,6 +624,11 @@ footer ul li a:hover{
         font-size: 1rem;
     }
 
+    .problem-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:0.5rem;
+    }
+
     /* ===============NAVBAR=================== */
     nav button {
         display: inline-block;
@@ -699,7 +707,42 @@ footer ul li a:hover{
         padding: 0.3rem 0.7rem;
     }
 
+    .problem-container{
+        grid-template-columns: 1fr 1fr ;
+        gap:0.5rem;
+    }
 
+    .problem{
+        padding:0;
+    }
+
+
+    .problem .problem_image{
+        width: 2.5rem;
+        height:2.5rem;
+    }
+
+    .problem a h4{
+        
+        font-size: 0.8rem;
+    }
+
+    .problem p{
+        font-size: 0.6rem;
+    }
+
+    .problem .solution-btn {
+        font-size: 0.6rem;
+        padding: 0.4rem;
+        border-radius: 0.2rem;
+    }
+
+
+    .problem{
+
+        padding-top: 0rem; 
+        padding-bottom: 1rem;
+    }
 
 
     
